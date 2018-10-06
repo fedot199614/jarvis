@@ -1,0 +1,19 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+repositories {
+  jcenter()
+  maven {
+    url 'https://jitpack.io'
+  }
+}
+
+dependencies {
+  compile 'com.github.austinv11:Discord4j:2.10.1'
+  compile 'com.sedmelluq:lavaplayer:1.3.0'
+  runtime 'ch.qos.logback:logback-classic:1.2.3'
+}
+
+mainClassName = 'com.sedmelluq.discord.lavaplayer.demo.d4j.Main'
